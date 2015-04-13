@@ -1,7 +1,7 @@
 .hero
   background-repeat: no-repeat
   background-position: center center
-  background-color: $light-bg-color
+  //background-color: $light-bg-color
   background-size: cover
   position: relative
 
@@ -23,8 +23,11 @@
   margin-right: auto
   max-width: 800px
 
+.hero__image
+  +margin-bottom(3)
+
 .hero__text
-  +heading-font-family
+  +body-font-family
   +font-size(gamma)
   +margin-top(2)
   max-width: 750px
@@ -42,7 +45,40 @@
   .hero__text a
     color: white
 
+.hero--start
+  +padding-top(3)
+  +padding-bottom(3)
+  @extend .hero
+  background: $red
+  color: white
+
+.hero--azure
+  @extend .hero
+  background: $azure
+  color: white
+
+.hero--white
+  @extend .hero
+  background: white
+
+.hero--brown
+  @extend .hero
+  position: relative
+
+  &:after
+    content: ""
+    z-index: -1
+    background-color: $brown
+    position: absolute
+    top: 40%
+    right: 0px
+    bottom: 0px
+    left: 0px
+    +padding-top(2)
+    +padding-bottom(2)
+
+    +at-breakpoint(desk)
+
 +at-breakpoint(desk)
   .hero__heading
     +font-size(40px)
-

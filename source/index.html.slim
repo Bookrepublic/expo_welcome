@@ -1,7 +1,48 @@
----
-title: Welcome to Middleman
----
-
-.welcome
-  h1
-    | Middleman is Watching
+.hero--start
+  .hero__body
+    .hero__body__inner
+      .hero__image
+        .wrap
+          = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
+            img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/bookrepublic_libreriecoop.png"
+      .hero__heading
+        | Titolo
+      .hero__text
+        .wrap
+            p
+              = lorem.sentences 5
+      .hero__actions
+        p
+      .nav
+        .nav__item
+          .button--huge
+            | Testo bottone
+.hero--azure
+  .hero__body
+    .hero__body__inner
+      .hero__text
+        .wrap
+          p
+            = lorem.sentences 3
+.hero--white
+  .hero__body
+    .hero__body__inner.f-no-bottom-padding
+      .hero__text.space--both-5
+        .wrap
+          p
+            = lorem.sentences 3
+      .hero__image
+        .wrap
+          = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
+            img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/head.png"
+.hero--brown
+  .hero__body
+    .hero__body__inner
+      .hero__image
+        .wrap
+          = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
+            img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/globo.png"
+      .hero__text
+        .wrap
+          p
+            = lorem.sentences 5
