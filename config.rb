@@ -35,6 +35,11 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# Slim
+
+::Slim::Engine.set_options :format  => :html
+Slim::Engine.set_default_options :pretty => false
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -71,6 +76,8 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :minify_html
+  activete :gip
+  activate :cache_buster
   # Use relative URLs
   # activate :relative_assets
 
