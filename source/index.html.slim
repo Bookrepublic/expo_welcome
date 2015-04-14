@@ -29,7 +29,7 @@
           p
             | La libreria all'interno del Supermercato del futuro la potrai visitare anche online. Un nuovo sito dove potrai scegliere, sfogliare e acquistare il meglio dei titoli, italiani e inglesi, dedicati ai temi dell'alimentazione e della sostenibilità. Sarai consigliato dai librai di Bookrepublic e di Librerie Coop.
 .hero--white
-  img src="images/libri.jpg"
+  img.wow.fadeIn data-wow-offset="200" src="images/libri.jpg"
   .hero__body
     .hero__body__inner.f-no-bottom-padding
       .hero__text.space--both-5
@@ -41,7 +41,7 @@
       .hero__image#guide
         .wrap
           = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
-            img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/head.png"
+            img.wow.zoomIn data-wow-offset="300" src="images/from_expo_to_milano.png"
       .hero__actions
         p
       .nav
@@ -57,13 +57,20 @@
       .hero__image
         .wrap.guide
           = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
-            img src="images/globo.png"
-            img.first src='images/torreVelasca.png' title='Torre Velasca'
-            img.second src='images/castello.png' title='Castello Sforzesco'
-            img.third src='images/duomo.png' title='Duomo di Milano'
-            img.fourth src='images/unicredit.png' title='Torre Unicredit'
-            img.five src='images/erba.png' title='Erba'
-            img.six src='images/alberi.png' title='alberi'
+            img.wow.zoomIn data-wow-offset="250" src="images/globo.png"
+            img.first.wow.bounceInUp data-wow-offset="250" src='images/torreVelasca.png' title='Torre Velasca'
+            img.second.wow.bounceInUp data-wow-offset="220" src='images/castello.png' title='Castello Sforzesco'
+            img.third.wow.bounceInUp data-wow-offset="350" src='images/duomo.png' title='Duomo di Milano'
+            img.fourth.wow.bounceInUp data-wow-offset="400" src='images/unicredit.png' title='Torre Unicredit'
+            img.five.wow.fadeIn src='images/erba.png' title='Erba'
+            img.six.wow.fadeIn data-wow-offset="100" src='images/alberi.png' title='alberi'
+            img.cloud--first.wow.pulse data-wow-offset="200" data-wow-iteration='1000' src='images/nuvola.png' title='Nuvole'
+            img.cloud--second.wow.pulse data-wow-offset="200" data-wow-iteration='1000' src='images/nuvola.png' title='Nuvole'
+            img.cloud--third.wow.swing data-wow-offset="100" src='images/nuvola.png' title='Nuvole'
+            img.cloud--fourth.wow.pulse data-wow-offset="200" data-wow-iteration='1000' src='images/nuvola.png' title='Nuvole'
+            img.cloud--five.wow.pulse data-wow-offset="200" data-wow-iteration='1000' src='images/nuvola.png' title='Nuvole'
+            img.cloud--six.wow.wobble data-wow-offset="100" src='images/nuvola.png' title='Nuvole'
+            img.cloud--seven.wow.tada data-wow-offset="100" src='images/nuvola.png' title='Nuvole'
       .hero__text
         .wrap
           p
@@ -83,7 +90,7 @@
       .wrap
         .flag
           .flag__image
-            img src='https://s3-eu-west-1.amazonaws.com/expo-welcome/idea.png' alt='Curioso?' title='Curioso?'
+            img.wow.shake data-wow-delay="0.5s"  src='https://s3-eu-west-1.amazonaws.com/expo-welcome/idea.png' alt='Curioso?' title='Curioso?'
           .flag__body
             .hero__heading.no-lateral-margin
               h2.alpha
@@ -95,19 +102,19 @@
 .wrap.space--top-8
   .grid
     .grid__item.width-12-12.lap-4-12.align--center.space--bottom-5
-      img.width--60 src='images/book.png' alt='Tutti i percorsi di lettura' title='Tutti i percorsi di lettura'
+      img.width--60.wow.fadeInDown data-wow-delay="0.5s" src='images/book.png' alt='Tutti i percorsi di lettura' title='Tutti i percorsi di lettura'
       h3.beta
         | Percorsi di lettura
       p.delta
         | Alimentazione, sostenibilità, ambiente. Sono tanti i temi di Expo 2015. Orientati tra il cibo e le tradizione dei Paesi ospiti con i titoli selezionati da Bookrepublic e Librerie Coop.
     .grid__item.width-12-12.lap-4-12.align--center.space--bottom-5
-      img.width--60 src='images/reading_ebook.png' alt='Un Reader' title='Un Reader'
+      img.width--60.wow.fadeInDown data-wow-delay="1.5s" src='images/reading_ebook.png' alt='Un Reader' title='Un Reader'
       h3.beta
         | Leggi nel Reader
       p.delta
         | I tuoi libri li puoi leggere dove vuoi. Scaricali, oppure leggili all'interno del nostro Reader semplicemte utilizzando il browser del tuo smartphone o del tuo computer.
     .grid__item.width-12-12.lap-4-12.align--center.space--bottom-5
-      img.width--60 src='images/ui.png' alt='Una nuova interfaccia' title='Una nuova interfaccia'
+      img.width--60.wow.fadeInDown data-wow-delay="0.8s" src='images/ui.png' alt='Una nuova interfaccia' title='Una nuova interfaccia'
       h3.beta
         | Una nuova interfaccia
       p.delta
