@@ -4,45 +4,105 @@
       .hero__image
         .wrap
           = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
-            img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/bookrepublic_libreriecoop.png"
+            img.width--60 src="images/logo.png"
       .hero__heading
-        | Titolo
+        | Nasce una nuova libreria
       .hero__text
         .wrap
             p
-              = lorem.sentences 5
+              | All'interno del Supermercato del Futuro in Expo troverai una libreria realizzata da Bookrepublic e Librerie Coop. Si tratta di un nuovo spazio, uno spazio dove pensiamo che non importa se il mezzo sul quale leggi sia un libro o un ebook e che quel che davvero conti sia leggere. Per questo troverai percorsi di lettura digitali e libri da sfogliare.
+              br
+              | In un unico luogo.
+            p
+              | Continua a leggere. Abbiamo preparato un regalo per te.
       .hero__actions
         p
       .nav
         .nav__item
-          .button--huge
-            | Testo bottone
+          .button--huge.button--rev
+            | Scopri il tuo regalo.
 .hero--azure
   .hero__body
     .hero__body__inner
       .hero__text
         .wrap
           p
-            = lorem.sentences 3
+            | La libreria all'interno del Supermercato del futuro la potrai visitare anche online. Un nuovo sito dove potrai scegliere, sfogliare e acquistare il meglio dei titoli, italiani e inglesi, dedicati ai temi dell'alimentazione e della sostenibilità. Sarai consigliato dai librai di Bookrepublic e di Librerie Coop.
 .hero--white
+  img src="images/libri.jpg"
   .hero__body
     .hero__body__inner.f-no-bottom-padding
       .hero__text.space--both-5
         .wrap
           p
-            = lorem.sentences 3
+            | E se vieni a Milano, ti facciamo un regalo. Visita l'Expo e poi scopri le chicche di Milano con la nostra guida.
+            br
+            | Il meglio della città in un ebook gratuito che puoi leggere dove preferisci e che racchiude ottimi consigli per una visita rapida.
       .hero__image
         .wrap
           = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
             img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/head.png"
+      .hero__actions
+        p
+      .nav
+        .nav__item
+          = link_to 'http://www.bookrepublic.it/book/' do
+            .button--huge
+              | Scarica 
+              strong gratis
+              |  la guida
 .hero--brown
   .hero__body
     .hero__body__inner
       .hero__image
         .wrap
           = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
-            img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/globo.png"
+            img src="images/globo.png"
       .hero__text
         .wrap
           p
-            = lorem.sentences 5
+            | Dai monumenti ai quartieri, dalle chiese ai migliori ristoranti, una guida ricca di informazioni e curiosità che racconta cosa proprio non ci si può perdere a Milano. La guida è facile da consultare perché i contenuti e gli itinerari sono pensati per i visitatori di Expo che possono, anche solo per un solo giorno, vivere da veri milanesi e non perdersi il meglio che la città ha da offrire.
+      .hero__actions
+        p
+      .nav
+        .nav__item
+          = link_to 'http://www.bookrepublic.it/book/' do
+            .button--huge
+              | Scarica 
+              strong gratis
+              |  la guida
+.hero--green
+  .hero__body
+    .hero__body__inner.align--left
+      .wrap
+        .flag
+          .flag__image
+            img src='https://s3-eu-west-1.amazonaws.com/expo-welcome/idea.png' alt='Curioso?' title='Curioso?'
+          .flag__body
+            .hero__heading.no-lateral-margin
+              h2.alpha
+                | Curioso?
+            .hero__text.no-lateral-margin
+              p
+                | Vienici a trovare. Dal 1 maggio nel Supermercato del Futuro oppure qui. Scopri i titoli che abbiamo selezionato per te e scopri le offerte che abbiamo pensato per te.
+
+.wrap.space--top-8
+  .grid
+    .grid__item.width-12-12.lap-4-12.align--center.space--bottom-5
+      img.width--60 src='images/book.png' alt='Tutti i percorsi di lettura' title='Tutti i percorsi di lettura'
+      h3.beta
+        | Percorsi di lettura
+      p.delta
+        | Alimentazione, sostenibilità, ambiente. Sono tanti i temi di Expo 2015. Orientati tra il cibo e le tradizione dei Paesi ospiti con i titoli selezionati da Bookrepublic e Librerie Coop.
+    .grid__item.width-12-12.lap-4-12.align--center.space--bottom-5
+      img.width--60 src='images/reading_ebook.png' alt='Un Reader' title='Un Reader'
+      h3.beta
+        | Leggi nel Reader
+      p.delta
+        | I tuoi libri li puoi leggere dove vuoi. Scaricali, oppure leggili all'interno del nostro Reader semplicemte utilizzando il browser del tuo smartphone o del tuo computer.
+    .grid__item.width-12-12.lap-4-12.align--center.space--bottom-5
+      img.width--60 src='images/ui.png' alt='Una nuova interfaccia' title='Una nuova interfaccia'
+      h3.beta
+        | Una nuova interfaccia
+      p.delta
+        | Un sito nuovo per una nuova iniziativa. Una nuova vetrina dove troverai tutti i consigli di lettura e le promozioni per scegliere al meglio la tua prossima lettura.

@@ -13,8 +13,17 @@
 
 .flag__image,
 .flag__body
-  display: table-cell
-  vertical-align: middle
+
+  +at-breakpoint(lap)
+    display: table-cell
+    vertical-align: middle
+
+  display: block
+
+  img
+    width: 14rem
+    +padding-top(2)
+    +padding-bottom(2)
 
   .flag--top &
     vertical-align: top
