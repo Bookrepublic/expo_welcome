@@ -76,8 +76,6 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :minify_html
-  activete :gip
-  activate :cache_buster
   # Use relative URLs
   # activate :relative_assets
 
