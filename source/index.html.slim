@@ -3,8 +3,7 @@
     .hero__body__inner
       .hero__image
         .wrap
-          = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
-            img.width--60 src="images/logo.png"
+          img.width--60 src="images/logo.png"
       .hero__heading
         | Nasce una nuova libreria
       .hero__text
@@ -20,7 +19,8 @@
       .nav
         .nav__item
           .button--huge.button--rev
-            | Scopri il tuo regalo.
+            = link_to('#guide', onclick: "$('#guide').animatescroll();") do
+              | Scopri il tuo regalo
 .hero--azure
   .hero__body
     .hero__body__inner
@@ -38,7 +38,7 @@
             | E se vieni a Milano, ti facciamo un regalo. Visita l'Expo e poi scopri le chicche di Milano con la nostra guida.
             br
             | Il meglio della città in un ebook gratuito che puoi leggere dove preferisci e che racchiude ottimi consigli per una visita rapida.
-      .hero__image
+      .hero__image#guide
         .wrap
           = link_to 'https://www.bookrepubli.it/book/xxxxxxxxxxxx' do
             img src="https://s3-eu-west-1.amazonaws.com/expo-welcome/head.png"

@@ -67,6 +67,8 @@ GEM
     jpegoptim (0.2.1)
       command-builder (>= 0.2.0)
       unix-whereis (>= 0.1.0)
+    jquery-middleman (3.0.4)
+      thor (>= 0.14, < 2.0)
     json (1.8.2)
     kramdown (1.6.0)
     listen (2.10.0)
@@ -133,6 +135,8 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-WOW (1.1.2)
+    rails-assets-animatescroll (1.0.7)
     rails-assets-normalize-scss (3.0.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
@@ -174,12 +178,15 @@ PLATFORMS
 DEPENDENCIES
   image_optim
   jpegoptim
+  jquery-middleman
   middleman (~> 3.3.10)
   middleman-autoprefixer
   middleman-imageoptim
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
   rack-contrib
+  rails-assets-WOW!
+  rails-assets-animatescroll!
   rails-assets-normalize-scss!
   sass
   slim

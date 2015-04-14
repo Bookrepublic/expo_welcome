@@ -9,9 +9,12 @@ gem 'rack-contrib'
 gem 'slim'
 gem 'middleman-autoprefixer'
 gem 'sass'
+gem "jquery-middleman"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-normalize-scss'
+  gem 'rails-assets-animatescroll'
+  gem 'rails-assets-WOW'
 end
 
 # Optimization
