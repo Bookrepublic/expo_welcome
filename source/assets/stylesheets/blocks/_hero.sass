@@ -28,11 +28,14 @@
 
 .hero__text
   +body-font-family
-  +font-size(gamma)
+  +font-size(delta)
   +margin-top(2)
   max-width: 750px
   margin-left: auto
   margin-right: auto
+
+  +at-breakpoint(lap)
+    +font-size(alpha)
 
 .hero__actions
   +margin-top(2)
@@ -70,7 +73,7 @@
     z-index: -10
     background-color: $brown
     position: absolute
-    top: 40%
+    top: 20%
     right: 0px
     bottom: 0px
     left: 0px
@@ -78,6 +81,7 @@
     +padding-bottom(2)
 
     +at-breakpoint(desk)
+      top: 40%
 
 .hero--green
   @extend .hero
