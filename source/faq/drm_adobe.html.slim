@@ -1,0 +1,49 @@
+.wrap
+  .formatted-content
+    h1
+      | ID Adobe, Adobe DRM e Social DRM
+    blockquote.gamma
+      | Quando acquisti un ebook protetto da Adobe DRM, prima di scaricare l'ebook ricevi una licenza d'uso in formato .ACSM: ti serve per completare il download del libro attraverso il tuo ID Adobe associato al dispositivo.
+    h2 Come creare un ID Adobe
+    p
+      | ID Adobe è il profilo personale che ti permette di leggere i tuoi ebook protetti da Adobe DRM. Se non hai ancora una ID Adobe puoi crearla gratuitamente 
+      = link_to 'a questo indirizzo', 'https://accounts.adobe.com/', target: '_blank'
+      |  e compiere le seguenti operazioni:
+      ol
+        li
+          = link_to 'In questa pagina', 'https://accounts.adobe.com/', target: '_blank'
+          |  clicca su "Crea un Adobe ID";
+        li
+          | compila i campi richiesti e procedi con l'iscrizione;
+        li
+          | se lo desideri, compila anche i campi facoltatativi oppure procedi cliccando su "Ignora";
+        li
+          | a questo punto hai creato il tuo Adobe ID. Per attivarlo, ti basta confermare la registrazione attraverso la mail di Adobe che riceverai.
+    p
+      | Ricorda: una volta che hai aperto un titolo protetto da Adobe DRM con il tuo ID Adobe, quel titolo potrà essere aperto SEMPRE E SOLO con quello stesso ID Adobe, pertanto ti consigliamo di crearne uno solo e di utilizzare sempre quello su tutti i tuoi dispositivi.
+    p
+      | Se dopo aver creato il tuo ID Adobe non ricordi l'indirizzo mail o la password che hai utilizzato, potrai verificarli entrambi 
+      = link_to 'a questa pagina.', 'https://accounts.adobe.com/', target: '_blank'
+.wrap.space--top-2
+  .formatted-content
+    h3 Ora che hai creato il tuo ID Adobe associalo al tuo dispositivo
+    = partial 'faq--box'
+.wrap.space--top-2
+  .formatted-content
+    h2 Perché devo creare un ID Adobe?
+    p
+      | La sigla DRM sta per “Digital Rights Management” e definisce tutti i sistemi tecnologici che hanno lo scopo di proteggere il contenuto dei file, coperti dai diritti d’autore, dalla diffusione illegale. Gli ebook che trovi su Bookrepublic sono protetti da due tipologie diverse di DRM: il Social DRM e l'Adobe DRM. Quale tipo di DRM utilizzare per proteggere il proprio ebook è una scelta che spetta agli editori. Bookrepublic consiglia ai suoi editori il Social DRM, ma sullo store puoi trovare ebook protetti da entrambi i sistemi. La tipologia di protezione è segnalata nella scheda del libro.
+    h3 Social DRM
+    p
+      | Il Social DRM o Watermarking è un metodo per la protezione dei contenuti che non limita in alcun modo l’utilizzo del file a cui viene applicato, ma agisce inserendo al suo interno delle informazioni sul proprietario difficili da rimuovere. Funziona come una filigrana che attraversa una banconota.
+    p
+      | Queste informazioni sono visibili grazie all'exlibris, un'etichetta digitale che si applica a ogni singolo ebook rendendolo unico. L'exlibris, infatti, personalizza ogni ebook scaricato con il nome e il cognome di chi l’ha acquistato e con alcuni dati sull’acquisto (data e numero della transazione, per esempio).
+    p
+      | Il Social DRM non solo permette l’uso su qualunque device compatibile con il formato epub, ma consente anche di convertire un ebook da un formato all'altro (ad esempio, in mobi).
+    h3 Adobe DRM
+    p
+      | L’Adobe DRM è un sistema di protezione realizzato da Adobe che tutela il copyright dell'opera limitando la fruizione, da parte dell'utente, dei contenuti digitali acquistati. Per poter leggere un ebook protetto da Adobe DRM ti serve un ID Adobe: così non avrai problemi. Ricorda però di verificare la possibilità di associare il tuo dispositivo a un ID Adobe prima di effettuare un acquisto. Ti aiutiamo a creare un ID Adobe all'inizio di questa pagina.
+    p
+      | Ricoda: rimuovere l'Adobe DRM è possibile attraverso un plugin dell'applicazione gratuita Calibre (
+      = link_to 'http://calibre-ebook.com/', 'la puoi scaricare a questo indirizzo'
+      |) ma questa procedura è illegale.

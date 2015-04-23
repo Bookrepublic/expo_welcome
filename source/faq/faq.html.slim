@@ -4,7 +4,7 @@
       | Guida all'ebook
     p
       | Hai un nuovo ereader? Hai sentito parlare di ebook e sei curioso di sapere se davvero esiste un modo diverso di leggere? Sei nel posto giusto! L'ebook è la nuova forma del libro: è più leggero (ne puoi portare tantissimi sempre con te senza appesantire la borsa), è più accessibile (lo acquisti con un click a qualsiasi ora del giorno e ovunque ti trovi, ti basta una connessione a internet) ed è più economico (gli ebook costano meno del libro cartaceo). Ma questi sono solo alcuni dei vantaggi degli ebook. Se vuoi scoprirne tanti altri non ti resta che fare i primi passi. E noi siamo qui per accompagnarti :)
-    blockquote
+    blockquote.gamma
       | Che cosa devi sapere sugli ebook? Poche semplici cose, ma importanti: leggi le nostre brevi istruzioni per capire che cos'è il DRM e configurare il tuo dispositivo di lettura. Parti con il piede giusto!
 .wrap.space--top-2
   .formatted-content
@@ -12,66 +12,25 @@
     .grid
       .grid__item.lap-6-12
         .grid
-          .grid__item.width-3-12
-            = link_to '#' do
-              p una parte
-          .grid__item.width-9-12
-            p l'altra parte
+          .grid__item.width-4-12
+            = link_to '/p/drm_adobe.html' do
+              img src="https://www.bookrepublic.it/static/cache/75/07/7507888346fbf943e3f485bbf92d19d8.jpg" alt="Adobe" title="Adobe"
+          .grid__item.width-8-12
+            = link_to '/p/drm_adobe.html' do
+              h3 DRM e Id Adobe
+            p
+              | Cos'è l'ID Adobe? Perché devi crearlo? Scoprilo con noi.
       .grid__item.lap-6-12
         .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
+          .grid__item.width-4-12
+            = link_to 'link2' do
+              img src='https://s3.eu-central-1.amazonaws.com/bookrepubliccoop/epub.jpg' alt='Epub e AdobeID' title='Epub e AdobeId'
+          .grid__item.width-8-12
+            = link_to 'link2' do
+              h3 Epub, PDF e .ACSM
+            p
+              | Quali sono i formati degli ebook? Impara a conoscerli con Bookrepublic.
 .wrap.space--top-2
   .formatted-content
     h2 Dove vuoi leggere i tuoi ebook?
-    .grid
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
-      .grid__item.lap-4-12
-        .grid
-          .grid__item.width-3-12
-            p una parte
-          .grid__item.width-9-12
-            p l'altra parte
+    = partial 'faq--box'
