@@ -1,0 +1,49 @@
+.wrap
+  .formatted-content
+    h1
+      | ID Adobe, Adobe DRM and Social DRM
+    blockquote.gamma
+      | When you purchase an ebook protected by Adobe DRM, before downloading the ebook you will receive a license to use format .ACSM.
+    h2 How to Create an Adobe ID
+    p
+      | Adobe ID is the personal profile that allows you to read ebooks protected by Adobe DRM. If you do not have an Adobe ID, you can create it for free at this address 
+      = link_to 'a questo indirizzo', 'https://accounts.adobe.com/', target: '_blank'
+      |  and do the following:
+      ol
+        li
+          = link_to 'In questa pagina', 'https://accounts.adobe.com/', target: '_blank'
+          |  on this page, click on "Create an Adobe ID";
+        li
+          | fill out the required fields and continue with the registration;
+        li
+          | if you want, you can also fill out the optional fields or proceed by clicking "Ignore";
+        li
+          | at this point you have created your Adobe ID. To activate it, you just confirm your registration via the email you receive from Adobe.
+    p
+      | Remember: once you've opened a title protected by Adobe DRM with your Adobe ID, that title can be opened ONLY with the same Adobe ID, so you'll want to create just one and always use that on all your devices.
+    p
+      | If after creating your Adobe ID you cannot remember the email address or password you used, you can verify them both 
+      = link_to 'on this page.', 'https://accounts.adobe.com/', target: '_blank'
+.wrap.space--top-2
+  .formatted-content
+    h3 Now, use your Adobe ID
+    = partial 'faq--box'
+.wrap.space--top-2
+  .formatted-content
+    h2 Why do I have to create an Adobe ID?
+    p
+      | DRM stands for "Digital Rights Management" and defines all the technological systems that are designed to protect the contents of files covered by copyright from illegal distribution. The ebooks on Bookrepublic are protected by two different types of DRM: Social DRM and Adobe DRM. The type of DRM used to protect your ebook is decided by the publisher. Bookrepublic advises its publishers to use Social DRM, but we carry ebooks protected by both systems. On the site, the type of protection is indicated among the book's details.
+    h3 Social DRM
+    p
+      | Social DRM or Watermarking is a method of content protection that does not limit in any way the use of the file to which it is applied, but works by inserting hard to remove owner information inside the file. It works like a watermark running through a banknote.
+    p
+      | This information is visible thanks to exlibris, a digital label added to every single ebook, making it unique. Exlibris, in fact, customizes each ebook downloaded with the first and last name of the person who purchased it and some data about the purchase (date and transaction number, for example).
+    p
+      | Social DRM not only allows the use of any device compatible with the epub format, but also allows you to convert an ebook from one format to another (for example, to mobi).
+    h3 Adobe DRM
+    p
+      | Adobe DRM is a system developed by Adobe that protects the copyrighted work by limiting the use, by the user, of the digital content purchased. To read an ebook protected by Adobe DRM you need an Adobe ID: this way, you will not have problems. However, remember to check the possibility to associate your device to an Adobe ID before making purchases. There are instructions about how to create an Adobe ID at the beginning of this page.
+    p
+      | Remember: removing Adobe DRM is possible through a plugin of the free application Calibre (
+      = link_to 'http://calibre-ebook.com/', 'http://calibre-ebook.com/'
+      | ) but this procedure is illegal.

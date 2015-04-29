@@ -1,0 +1,37 @@
+.wrap
+  .formatted-content
+    h1.alpha
+      | Ebook guide
+    p
+      | Got a new e-reader? Heard of ebooks and curious to know if there is really a different way to read? You're in the right place! The ebook is the new form of book: it is lighter (you can take plenty of them without making your bag heavier), it is more accessible (you purchase it with one click at any time of day and wherever you are, you just need an Internet connection) and it is cheaper (ebooks cost less than paper books). But these are just some of the advantages of the ebook. If you want to discover the others you just have to take the first steps. And we are here to accompany you :)
+    blockquote.gamma.space--top-2
+      | What do you need to know about the ebook? A few simple, but important, things: read our brief instructions to understand what DRM is and how to configure your reading device. Set off on the right foot!
+  .wrap.space--top-2
+    h2.beta Fundamentals
+    .grid
+      .grid__item.lap-6-12.space--top-1
+        .grid
+          .grid__item.width-4-12
+            = link_to '/p/en_drm_adobe.html' do
+              img src="https://s3.eu-central-1.amazonaws.com/bookrepubliccoop/adobe.png" alt="Adobe" title="Adobe"
+          .grid__item.width-8-12
+            = link_to '/p/en_drm_adobe.html' do
+              h3.gamma
+                | DRM and Adobe ID
+            p
+              | What is Adobe ID? Why do you have to create one? Find out with us.
+      .grid__item.lap-6-12.space--top-1
+        .grid
+          .grid__item.width-4-12
+            = link_to '/p/en_formati.html' do
+              img src='https://s3.eu-central-1.amazonaws.com/bookrepubliccoop/epub.png' alt='Epub e Adobe' title='Epub and Adobe'
+          .grid__item.width-8-12
+            = link_to '/p/en_formati.html' do
+              h3.gamma
+                | Epub, PDF and .ACSM
+            p
+              | What ebook formats are there? Learn about them with Bookrepublic.
+.wrap.space--top-2
+  .formatted-content
+    h2.beta Where do you want to read your ebooks?
+    = partial 'faq--box'
