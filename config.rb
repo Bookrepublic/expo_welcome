@@ -13,6 +13,7 @@
 
 page "/faq/*", layout: :faq
 page "/toc/*", layout: :toc
+page "/landing/*", layout: :landing
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
